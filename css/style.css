@@ -1,0 +1,92 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size:13px;
+}
+h1 {
+  font-size:18px;
+}
+h2 {
+  font-size:14px;
+}
+a {
+  text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+}
+.indicator {
+  display:inline-block;
+  width:12px;
+  height:12px;
+  border-radius:100%;
+  vertical-align:middle;
+  margin-right:4px;
+  background-color:#FF0000;
+}
+.indicator.on {
+  background-color:#00FF55;
+}
+
+#hammer_events,
+#mouse_events,
+#touch_events {
+  margin-bottom:20px;
+}
+#hammer_events ul,
+#mouse_events ul,
+#touch_events ul {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:0;
+}
+#hammer_events ul li,
+#mouse_events ul li,
+#touch_events ul li {
+  display:block;
+  float:left;
+}
+#hammer_events ul li a,
+#mouse_events ul li a,
+#touch_events ul li a {
+  display:block;
+  width: 113px;
+}
+
+#touch_test {
+  width:100%;
+  height:400px;
+  background: url(../img/touch.jpg) no-repeat center center;
+  background-size: auto 100%;
+  border:1px solid #333;
+}
+
+.event-name.watched {
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+
+h1.section {
+  cursor:pointer;
+}

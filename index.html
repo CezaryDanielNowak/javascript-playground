@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Touch Tester</title>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="touch_tester_wrapper">
+    <h1 class="section">Mouse Events</h1>
+    <h2>Click on event name to log events on your console</h2>
+    <div id="mouse_events" class="clearfix events-container"></div>
+    <h1 class="section">Touch Events</h1>
+    <h2>Click on event name to log events on your console</h2>
+    <div id="touch_events" class="clearfix events-container"></div>
+    <h1 class="section">Hammer Events</h1>
+    <h2>Click on event name to log events on your console</h2>
+    <div id="hammer_events" class="clearfix events-container"></div>
+    <div class="hammer-config">
+      <label for="prevent_hammer">
+        <input type="checkbox" id="prevent_hammer"> Prevent Default Browser Behaviour for Touch Events
+      </label>
+    </div>
+    <div id="touch_test" class="clearfix"></div>
+  </div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/touch-tester.js"></script>
+</body>
+</html>
